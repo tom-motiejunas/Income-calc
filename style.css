@@ -29,6 +29,12 @@ body {
     var(--color-3)
   );
 }
+.logo {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  width: 25rem;
+}
 .main-box {
   width: 50rem;
   height: 50rem;
