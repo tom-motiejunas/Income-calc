@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --color-1: #157a6e;
+  --color-2: #499f68;
+  --color-3: #77b28c;
+  --color-4: #c2c5bb;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-2),
+    var(--color-3)
+  );
+}
+.main-box {
+  width: 50rem;
+  height: 50rem;
+  background-color: var(--color-1);
+  border-radius: 10%;
+}
+.income,
+.incomeText,
+.expenditureText,
+.expenditure {
+  font-size: large;
+}
+.left {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  display: inline-block;
+}
+.right {
+  margin-top: 2rem;
+  margin-right: 1rem;
+  display: inline-block;
+  top: 0rem;
+  float: right;
+}
+.submit {
+  font-family: 'Nunito', sans-serif;
+  font-size: large;
+  margin: auto;
+  margin-top: 5rem;
+  width: 10rem;
+  height: 5rem;
+  display: block;
+  background-color: var(--color-4);
+  border: none;
+  cursor: pointer;
+}
+.hidden {
+  visibility: hidden;
+}
+.ending {
+  text-align: center;
+  margin-top: 5rem;
+  top: 0rem;
+  position: relative;
+}
+.sum {
+  font-size: 35px;
+  margin-top: 3rem;
+  color: orange;
+}
+.green {
+  color: #32cd32;
+}
+.red {
+  color: #e12120;
+}
