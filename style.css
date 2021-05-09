@@ -36,7 +36,9 @@ body {
   width: 25rem;
 }
 .main-box {
-  width: 50rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 55rem;
   height: 50rem;
   background-color: var(--color-1);
   border-radius: 10%;
@@ -55,9 +57,7 @@ body {
 .right {
   margin-top: 2rem;
   margin-right: 1rem;
-  display: inline-block;
   top: 0rem;
-  float: right;
 }
 .submit {
   font-family: 'Nunito', sans-serif;
@@ -70,6 +70,7 @@ body {
   background-color: var(--color-4);
   border: none;
   cursor: pointer;
+  grid-column-start: 2;
 }
 .hidden {
   visibility: hidden;
@@ -77,8 +78,12 @@ body {
 .ending {
   text-align: center;
   margin-top: 5rem;
+  margin-left: 8rem;
   top: 0rem;
+  width: 40rem;
   position: relative;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 .sum {
   font-size: 35px;
@@ -89,5 +94,24 @@ body {
   color: #32cd32;
 }
 .red {
-  color: #e12120;
+  color: #e04545;
+}
+.arrow-box {
+  width: 3rem;
+  margin-top: 2.5rem;
+}
+.up {
+  margin-top: 2.1rem;
+  display: inline-block;
+}
+.procents {
+  position: relative;
+  top: -0.5rem;
+  height: 1rem;
+  display: inline-block;
+}
+.content-box {
+  white-space: nowrap;
+  width: 5rem;
+  margin-left: 5rem;
 }
